@@ -1,0 +1,31 @@
+﻿@inject HttpClient Http
+@using pages
+@page "/projects"
+
+
+
+@if (_projects == null)
+{
+    
+}
+
+else
+{
+    <div class="row-infinity-col3-disconnected">
+    @*grid --> row-infinity-col3-disconnected*@
+    @foreach (var project in _projects)
+    {
+        <ProjectCard Project="project"/>
+    }
+    </div>
+}
+
+@code 
+{
+    private List<Project>? _projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _projects=await Http.GetFromJsonAsync<List<Project>>("/dataJSON/projects.json");
+    }
+}

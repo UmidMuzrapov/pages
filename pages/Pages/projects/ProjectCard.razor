@@ -1,0 +1,29 @@
+<div id="project-frame">
+    <div class="frame">
+        <div>
+            <div class="frameline">
+                <p class="header"> @Project.Name</p>
+            </div>
+
+            <img src="@Project.Image" class="auhtorPhoto" alt="@Project.Name" />
+        </div>
+
+        <div class="description">
+            <p><strong>Description:</strong>@Project.Description</p>
+        </div>
+
+        @if (!(@Project.Tools.Equals("None")))
+        {
+            <div class="description">
+                <p><strong>Tools: </strong>@Project.Tools</p>
+            </div>
+        }
+
+    </div>
+</div>
+
+@code {
+    [Parameter][EditorRequired] public Project Project { get; set; } = default;
+
+}
+
