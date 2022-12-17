@@ -99,6 +99,8 @@ i{
     padding: 0 5px 0 0;
 }
 
+
+
 /*Mobile*/
 @media only screen and (max-width: 700px) {
 
@@ -109,14 +111,33 @@ i{
         grid-template-rows: 1fr 1fr 1fr;
         margin:10px;
     }
+
+    h2 {
+        font-size: 18px;
+    }
+
 }
 
 /*Desktop*/
 @media screen and (min-width: 701px) {
+    /*General*/
+    .myMenu {
+        display: none;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    /*Home*/
     .row1-col3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
+    }
+
+    #home {
+        width: 80%;
     }
 
     .row-infinity-col3-disconnected {
@@ -126,9 +147,7 @@ i{
         padding: 10px 0;
     }
 
-    .myMenu{
-        display:none;
-    }
+
 }
 
 /* Home*/
@@ -146,13 +165,9 @@ i{
     }
 
 #introduction {
-    text-align: center;
     margin: 10px auto;
 }
 
-#home {
-    width: 80%;
-}
 /*Projects*/
 #project-frame .frame {
     border-radius: 10px;
