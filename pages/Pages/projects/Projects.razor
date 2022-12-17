@@ -26,6 +26,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _projects=await Http.GetFromJsonAsync<List<Project>>("/dataJSON/projects.json");
+        _projects=await Http.GetFromJsonAsync<List<Project>>("/pages/dataJSON/projects.json");
     }
 }
