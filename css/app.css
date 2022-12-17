@@ -185,6 +185,9 @@ i{
 }
 
 /* Home*/
+#home {
+    margin: 10px;
+}
 
 #home a {
     color: white;
