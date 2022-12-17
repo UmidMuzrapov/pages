@@ -1,4 +1,6 @@
-﻿@page "/"
+﻿@inject HttpClient Http
+
+@page "/"
 
 <div id="home">
     
@@ -29,6 +31,63 @@
         </p>
     </div>
 
+        <div>
+        <h2>Courses</h2>
+
+        @if (_universityCourses!=null)
+        {
+            <table class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-group-divider">
+
+                    @while (elementCount<elementMax)
+                    {
+                        if (elementCount<_universityCourses.Count)
+                        {
+                            Console.WriteLine(elementCount);
+                            <tr>
+                                <td class="gray-background">@_universityCourses[elementCount].Name</td>
+                                <td class="gray-background">@_universityCourses[elementCount].Description</td>
+                            </tr>
+                        }
+
+                        elementCount++;
+                    }
+
+                </tbody>
+            </table>
+
+            @if (elementMax<_universityCourses.Count)
+            {
+                <div>
+                    <span onclick="@LoadMore"><button type="button" class="btn btn-primary">Load more</button> </span>
+                </div>
+            }
+        }
+    </div>
 </div>
 
+@code {
+    private int elementMax = 5;
+    private int elementCount = 0;
+    private List<Course>? _universityCourses;
 
+    protected override async Task OnInitializedAsync()
+    {
+        _universityCourses= await Http.GetFromJsonAsync<List<Course>>("/pages/dataJSON/universityCourses.json");
+    }
+
+    private void LoadMore()
+    {
+        elementCount=0;
+        elementMax=elementMax+5;
+    }
+
+}
