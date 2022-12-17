@@ -89,14 +89,18 @@ footer {
     padding: 10px 0;
 }
 
-footer a{
+    footer a {
         color: white;
         text-decoration: none;
         margin: 5px;
+    }
+
+i {
+    padding: 0 5px 0 0;
 }
 
-i{
-    padding: 0 5px 0 0;
+.gray-background {
+    /*background: #E8E8E8 !important;*/
 }
 
 /*Loader*/
@@ -143,13 +147,12 @@ i{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        margin:10px;
+        margin: 10px;
     }
 
     h2 {
         font-size: 18px;
     }
-
 }
 
 /*Desktop*/
@@ -180,15 +183,12 @@ i{
         margin: 10px 0;
         padding: 10px 0;
     }
-
-
 }
 
 /* Home*/
-#home {
-    margin: 10px;
+#home{
+    margin:10px;
 }
-
 #home a {
     color: white;
     text-decoration: none; /* no underline */
@@ -213,9 +213,15 @@ i{
     background-clip: padding-box;
     background: white;
     background-color: #E8E8E8;
-    height:95%;
+    height: 95%;
     overflow: auto;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
 }
+
+    #project-frame .frame::-webkit-scrollbar {
+        display: none;
+    }
 
 #project-frame .frameline {
     border-top-left-radius: 10px;
