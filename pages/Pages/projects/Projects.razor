@@ -2,30 +2,68 @@
 @using pages
 @page "/projects"
 
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" @onclick="@ShowJava">
+    <label class="btn btn-outline-primary" for="btnradio1">Java</label>
 
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" @onclick="@ShowPython">
+    <label class="btn btn-outline-primary" for="btnradio2">Python</label>
+
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" @onclick="@ShowOther">
+    <label class="btn btn-outline-primary" for="btnradio3">Other</label>
+
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" @onclick="@ShowAll" checked>
+    <label class="btn btn-outline-primary" for="btnradio4">All</label>
+</div>
 
 @if (_projects == null)
 {
-    
+
 }
 
 else
 {
     <div class="row-infinity-col3-disconnected">
-    @*grid --> row-infinity-col3-disconnected*@
-    @foreach (var project in _projects)
-    {
-        <ProjectCard Project="project"/>
-    }
+        @*grid --> row-infinity-col3-disconnected*@
+        @foreach (var project in _projects)
+        {
+            <ProjectCard Project="project" />
+        }
     </div>
 }
 
-@code 
+@code
 {
     private List<Project>? _projects;
+    private bool showAll = true;
+    private string? tool = "";
 
     protected override async Task OnInitializedAsync()
     {
         _projects=await Http.GetFromJsonAsync<List<Project>>("/pages/dataJSON/projects.json");
+    }
+
+    private void ShowJava()
+    {
+        tool="Java";
+        showAll=false;
+    }
+
+    private void ShowAll()
+    {
+        showAll=true;
+        tool="";
+    }
+
+    private void ShowPython()
+    {
+        tool="Python";
+        showAll=false;
+    }
+
+    private void ShowOther()
+    {
+        tool="Other";
+        showAll=false;
     }
 }

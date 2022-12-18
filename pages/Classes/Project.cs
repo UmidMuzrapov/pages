@@ -7,5 +7,5 @@ public class Project
     public string? Description { get; set; }
     public bool? LiveTest { get; set; }
     public string? Tools { get; set; }
-
+    public string? GitLink { get; set; }
 }
