@@ -27,7 +27,7 @@ else
         @*grid --> row-infinity-col3-disconnected*@
         @foreach (var project in _projects)
         {
-            if (showAll | project.Tools.Equals(tool))
+            if (showAll | project.Category.Equals(category))
             {
                 <ProjectCard Project="project" />
             }
@@ -39,7 +39,7 @@ else
 {
     private List<Project>? _projects;
     private bool showAll = true;
-    private string? tool = "";
+    private string? category = "";
 
     protected override async Task OnInitializedAsync()
     {
@@ -48,25 +48,25 @@ else
 
     private void ShowJava()
     {
-        tool="Java";
+        category="Java";
         showAll=false;
     }
 
     private void ShowAll()
     {
         showAll=true;
-        tool="";
+        category="";
     }
 
     private void ShowPython()
     {
-        tool="Python";
+        category="Python";
         showAll=false;
     }
 
     private void ShowOther()
     {
-        tool="Other";
+        category="Other";
         showAll=false;
     }
 }

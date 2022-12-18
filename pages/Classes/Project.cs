@@ -8,4 +8,5 @@ public class Project
     public bool? LiveTest { get; set; }
     public string? Tools { get; set; }
     public string? GitLink { get; set; }
+    public string? Category { get; set; }
 }
