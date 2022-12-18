@@ -27,7 +27,10 @@ else
         @*grid --> row-infinity-col3-disconnected*@
         @foreach (var project in _projects)
         {
-            <ProjectCard Project="project" />
+            if (showAll | project.Tools.Equals(tool))
+            {
+                <ProjectCard Project="project" />
+            }
         }
     </div>
 }
