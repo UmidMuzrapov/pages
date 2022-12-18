@@ -103,6 +103,15 @@ i {
     /*background: #E8E8E8 !important;*/
 }
 
+.button-center{
+    margin:5px 5px !important;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /*Loader*/
 .loader {
     border: 16px solid #f3f3f3;
