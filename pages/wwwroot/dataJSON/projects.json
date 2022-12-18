@@ -31,7 +31,7 @@
   {
     "id": 4,
     "image": "/pages/dataPhotos/projects/connectFour.jpeg",
-    "name": "Coonect Four",
+    "name": "Connect Four",
     "description": "The program allows two users to play ConnectFour game. The target values can be from 3 to 6 for win. The user can play game again if they want.",
     "liveTest": false,
     "tools": "Java",
