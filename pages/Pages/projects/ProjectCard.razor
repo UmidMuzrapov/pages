@@ -1,16 +1,19 @@
 <div id="project-frame">
+
     <div class="frame">
         <div>
             <div class="frameline">
                 <p class="header"> @Project.Name</p>
             </div>
 
-            <img src="@baseUrl+@Project.Image" class="auhtorPhoto" alt="@Project.Name" />
+            <img src="@Project.Image" alt="@Project.Name" />
         </div>
 
         <div class="button-center">
+       
             <a href="@Project.GitLink"><button type="button" class="btn btn-primary">View in GitHub</button> </a>
         </div>
+        
 
         <div class="description">
             <p><strong>Description:</strong>@Project.Description</p>
@@ -22,14 +25,13 @@
                 <p><strong>Tools: </strong>@Project.Tools</p>
             </div>
         }
-
     </div>
+   
 </div>
 
 @code {
-    [Parameter][EditorRequired] public Project Project { get; set; } = default;
-
-    string baseUrl = "/pages";
-
+    [Parameter]
+    [EditorRequired]
+    public Project Project { get; set; } = default;
 }
 
