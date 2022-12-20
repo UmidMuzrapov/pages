@@ -1,0 +1,28 @@
+﻿@inject HttpClient Http
+@using pages
+@page "/skills"
+
+@if (_skills==null)
+{
+    
+}
+
+else
+{
+    <div class="row-infinity-col6-disconnected">
+        @foreach (var skill in _skills)
+        {
+            <SkillCard Skill="@skill"></SkillCard>
+        }
+    </div>
+}
+
+@code {
+
+    private List<Skill>? _skills;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _skills=await Http.GetFromJsonAsync<List<Skill>>("/pages/dataJSON/skills.json");
+    }
+}

@@ -1,12 +1,12 @@
 ﻿<div class="myMenu">
-<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Menu</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="top-row ps-3 navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Menu</a>
+            <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </div>
-</div>
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
@@ -23,24 +23,30 @@
         </div>
 
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="https://www.linkedin.com/in/umidmuzrapov/">
-                 <i class="bi bi-linkedin"></i> LinkedIn
+            <NavLink class="nav-link" href="skills">
+                <span class="bi bi-award" aria-hidden="true"></span> Skills
             </NavLink>
         </div>
 
-         <div class="nav-item px-3">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="https://www.linkedin.com/in/umidmuzrapov/">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
             <NavLink class="nav-link" href="https://www.hackerrank.com/dashboard">
                 <i class="bi bi-code"></i>HackerRank
             </NavLink>
         </div>
 
-         <div class="nav-item px-3">
+        <div class="nav-item px-3">
             <NavLink class="nav-link" href="https://github.com/UmidMuzrapov">
                 <i class="bi bi-github"></i>GitHub
             </NavLink>
         </div>
 
-         <div class="nav-item px-3">
+        <div class="nav-item px-3">
             <NavLink class="nav-link" href="mailto:umidmuzrapov@arizona.edu?subject=Please enter the subject field.">
                 <i class="bi bi-envelope-at"></i>Send Email
             </NavLink>

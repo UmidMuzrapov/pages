@@ -112,6 +112,11 @@ a {
     text-decoration: none;
 }
 
+.center {
+    text-align:center;
+    margin:auto;
+}
+
 /*Loader*/
 .loader {
     border: 16px solid #f3f3f3;
@@ -162,10 +167,34 @@ a {
     h2 {
         font-size: 18px;
     }
+
+    /*Skills*/
+    .row-infinity-col6-disconnected {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
 }
 
+/*Tablet*/
+@media only screen and (min-width: 701px) and (max-width: 1000px){
+
+    .row-infinity-col3-disconnected {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .row-infinity-col6-disconnected {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+}
 /*Desktop*/
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 1001px) {
     /*General*/
     .myMenu {
         display: none;
@@ -192,6 +221,14 @@ a {
         margin: 10px 0;
         padding: 10px 0;
     }
+
+    /*Skills*/
+    .row-infinity-col6-disconnected {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
 }
 
 /* Home*/
@@ -215,7 +252,7 @@ a {
 }
 
 /*Projects*/
-#project-frame .frame {
+#project-frame .frame{
     border-radius: 10px;
     margin: 5px;
     font-size: 16px;
@@ -252,4 +289,33 @@ a {
 
 #project-frame .toolselements {
     display: inline;
+}
+
+/*Skills*/
+#skill-card img {
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.circle-image {
+    border-radius: 50%;
+
+}
+
+#skill-card .frame {
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-clip: padding-box;
+    background-color: white;
+    height: 95%;
+    overflow: auto;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+#project-frame .frame::-webkit-scrollbar {
+    display: none;
 }

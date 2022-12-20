@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Python",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "80"
+  },
+  {
+    "name": "Java",
+    "image": "/pages/dataPhotos/skills/java.jpg",
+    "level": "90"
+  },
+  {
+    "name": "C#",
+    "image": "/pages/dataPhotos/skills/cSharp.png",
+    "level": "80"
+  },
+  {
+    "name": "JavaScript",
+    "image": "/pages/dataPhotos/skills/javascript.png",
+    "level": "60"
+  },
+  {
+    "name": "html",
+    "image": "/pages/dataPhotos/skills/html.png",
+    "level": "90"
+  },
+  {
+    "name": "CSS",
+    "image": "/pages/dataPhotos/skills/css.jpg",
+    "level": "80"
+  },
+  {
+    "name": "SQL",
+    "image": "/pages/dataPhotos/skills/sql.jpg",
+    "level": "70"
+  }
+
+]
