@@ -1,17 +1,18 @@
 ﻿@if (Skill!=null)
 {
     <div id="skill-card">
-        
-    <div class="frame">
+
+        <div class="frame">
             <div class="circle-image center">
                 <img src="@Skill.Image" class="card-img-top" alt="@Skill.Name">
             </div>
 
             <div class="card-body">
-                <p class="card-text center">@Skill.Name</p>
+
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: @Skill.Level%" aria-valuenow="@Skill.Level" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+                <p class="card-text center">@Skill.Name</p>
             </div>
         </div>
     </div>
