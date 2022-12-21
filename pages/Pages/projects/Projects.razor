@@ -51,7 +51,7 @@ else
     private List<Project>? _projects;
     private bool showAll = true;
     private string? category = "";
-    private int elementMax = 6;
+    private int elementMax = 3;
     private int elementCount = 0;
     private List<Project>? _pythonProjects = new List<Project>();
     private List<Project>? _javaProjects = new List<Project>();
@@ -99,13 +99,13 @@ else
 
     private async Task SetInitialCount()
     {
-        elementMax = 6;
+        elementMax = 3;
         elementCount = 0;
     }
     private async Task LoadMore()
     {
         elementCount=0;
-        elementMax=elementMax+5;
+        elementMax=elementMax+3;
     }
 
     private async Task CountProjects()
