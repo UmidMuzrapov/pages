@@ -117,6 +117,10 @@ a {
     margin:auto;
 }
 
+.button-margin-bottom{
+    margin-bottom:10px;
+}
+
 /*Loader*/
 .loader {
     border: 16px solid #f3f3f3;
