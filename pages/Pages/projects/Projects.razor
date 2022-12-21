@@ -16,23 +16,34 @@
     <label class="btn btn-outline-primary" for="btnradio4">All</label>
 </div>
 
-@if (_projects == null)
+@if (_currentProjects == null || _currentProjects.Count==0)
 {
 
 }
 
 else
 {
+
     <div class="row-infinity-col3-disconnected">
         @*grid --> row-infinity-col3-disconnected*@
-        @foreach (var project in _projects)
+        @while (elementCount<elementMax)
         {
-            if (showAll | project.Category.Equals(category))
+            if (elementCount<_currentProjects.Count)
             {
-                <ProjectCard Project="project" />
+                <ProjectCard Project="_currentProjects[elementCount]" />
             }
+            elementCount++;
         }
+
+
     </div>
+
+    @if (elementMax<_currentProjects.Count)
+    {
+        <div class="button-margin-bottom">
+            <span onclick="@LoadMore"><button type="button" class="btn btn-primary">Load more</button> </span>
+        </div>
+    }
 }
 
 @code
@@ -40,33 +51,80 @@ else
     private List<Project>? _projects;
     private bool showAll = true;
     private string? category = "";
+    private int elementMax = 6;
+    private int elementCount = 0;
+    private List<Project>? _pythonProjects = new List<Project>();
+    private List<Project>? _javaProjects = new List<Project>();
+    private List<Project>? _otherProjects = new List<Project>();
+    private List<Project>? _currentProjects = new List<Project>();
 
     protected override async Task OnInitializedAsync()
     {
         _projects=await Http.GetFromJsonAsync<List<Project>>("/pages/dataJSON/projects.json");
+        _currentProjects=_projects;
+        CountProjects();
     }
-
-    private void ShowJava()
+    private async Task ShowJava()
     {
         category="Java";
         showAll=false;
+        _currentProjects=_javaProjects;
+        await SetInitialCount();
     }
 
-    private void ShowAll()
+    private async Task ShowAll()
     {
         showAll=true;
         category="";
+        _currentProjects=_projects;
+        await SetInitialCount();
+
     }
 
-    private void ShowPython()
+    private async Task ShowPython()
     {
         category="Python";
         showAll=false;
+        _currentProjects=_pythonProjects;
+        await SetInitialCount();
     }
 
-    private void ShowOther()
+    private async Task ShowOther()
     {
         category="Other";
         showAll=false;
+        _currentProjects=_otherProjects;
+        await SetInitialCount();
+    }
+
+    private async Task SetInitialCount()
+    {
+        elementMax = 6;
+        elementCount = 0;
+    }
+    private async Task LoadMore()
+    {
+        elementCount=0;
+        elementMax=elementMax+5;
+    }
+
+    private async Task CountProjects()
+    {
+
+        foreach (var project in _projects)
+        {
+            if (project.Category.Equals("Python"))
+            {
+                _pythonProjects.Add(project);
+            }
+
+            else if (project.Category.Equals("Java"))
+            {
+                _javaProjects.Add(project);
+            }
+
+            else _otherProjects.Add(project);
+        }
+
     }
 }
