@@ -183,12 +183,6 @@ a {
 /*Tablet*/
 @media only screen and (min-width: 701px) and (max-width: 1000px){
 
-    .row-infinity-col3-disconnected {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 10px 0;
-        padding: 10px 0;
-    }
     .row-infinity-col6-disconnected {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
