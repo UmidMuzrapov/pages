@@ -175,7 +175,7 @@ a {
     /*Skills*/
     .row-infinity-col6-disconnected {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         margin: 10px;
     }
 }
@@ -185,7 +185,7 @@ a {
 
     .row-infinity-col6-disconnected {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 10px 0;
         padding: 10px 0;
     }
@@ -222,7 +222,7 @@ a {
     /*Skills*/
     .row-infinity-col6-disconnected {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin: 10px 0;
         padding: 10px 0;
     }
@@ -304,7 +304,7 @@ a {
 #skill-card .frame {
     border-radius: 10px;
     margin: 5px;
-    font-size: 12px;
+    font-size: 16px;
     background-clip: padding-box;
     background-color: white;
     height: 95%;
