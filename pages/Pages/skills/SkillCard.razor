@@ -3,16 +3,16 @@
     <div id="skill-card">
 
         <div class="frame">
-            <div class="circle-image center">
-                <img src="@Skill.Image" class="card-img-top" alt="@Skill.Name">
-            </div>
 
             <div class="card-body">
-
+                @if (Skill.Level>=80) SkillColor="bg-success";
+                else if (Skill.Level>60 & Skill.Level<80) SkillColor="bg-warning";
+                else SkillColor="bg-danger";
+                
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: @Skill.Level%" aria-valuenow="@Skill.Level" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar @SkillColor" role="progressbar" aria-label="Basic example" style="width: @Skill.Level%" aria-valuenow="@Skill.Level" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p class="card-text center">@Skill.Name</p>
+                <p class="card-text">@Skill.Name</p>
             </div>
         </div>
     </div>
@@ -24,6 +24,4 @@
     [Parameter]
     public Skill? Skill { get; set; }
 
-
-
-}
+    public string SkillColor { get; set;}
