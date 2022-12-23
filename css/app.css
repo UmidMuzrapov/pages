@@ -275,6 +275,7 @@ a {
 
 #project-frame .description {
     padding: 5px;
+    font-weight: 400;
 }
 
 #project-frame img {
