@@ -1,5 +1,10 @@
 [
   {
+    "name": "AWS Services",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
+  },
+  {
     "name": "Python",
     "image": "/pages/dataPhotos/skills/python.png",
     "level": "80"
