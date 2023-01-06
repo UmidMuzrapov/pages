@@ -1,0 +1,43 @@
+﻿@inject HttpClient Http
+@page "/papers"
+
+<div id="papers">
+
+    @if (_papers!=null)
+    {
+        <table class="table table-striped" style="max-width=800px;">
+
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Download</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-group-divider">
+                @foreach(var paper in _papers)
+                {
+                    <tr>
+                        <td class="gray-background">@paper.Title</td>
+                        <td class="gray-background"><a href="@paper.Link"><i class="bi bi-cloud-arrow-down --bs-primary"></i></a></td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    }
+
+
+</div>
+
+
+@code
+{
+    private List<Paper>? _papers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _papers= await Http.GetFromJsonAsync<List<Paper>>("/papers/dataJSON/papers.json");
+    }
+}
