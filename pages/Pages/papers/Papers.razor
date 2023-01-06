@@ -38,6 +38,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _papers= await Http.GetFromJsonAsync<List<Paper>>("/pages/papers/dataJSON/papers.json");
+        _papers= await Http.GetFromJsonAsync<List<Paper>>("/pages/dataJSON/papers.json");
     }
 }
