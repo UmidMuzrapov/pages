@@ -317,3 +317,12 @@ a {
 #skill-card .frame::-webkit-scrollbar {
     display: none;
 }
+
+/*Papers*/
+#papers table {
+    max-width: 800px;
+}
+
+#papers a {
+    color: black;
+}
