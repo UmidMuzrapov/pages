@@ -18,12 +18,6 @@
   },
 
   {
-    "name": "MATH 323, Formal Mathematical Reasoning and Writing",
-    "grade": "Pending",
-    "description": "Elementary real analysis as an introduction to abstract mathematics and the use of mathematical language. Elementary logic and quantifiers; manipulations with sets, relations and functions, including images and pre-images; properties of the real numbers; supreme and infimum; other topics selected from cardinality, the topology of the real line, sequence and limits of sequences and functions; the emphasis throughout is on proving theorems."
-  },
-
-  {
     "name": "CSC 210, Software Development",
     "grade": "A",
     "description": "An introduction to the development of large-scale software. Topics include modularization, design patterns, documentation, unit testing, source code control, build systems, debugging, and performace tuning."
