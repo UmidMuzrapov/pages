@@ -2,21 +2,22 @@
 @using pages
 @page "/skills"
 
-@if (_skills==null)
-{
+<div id="skills">
+    @if (_skills==null)
+    {
     
-}
+    }
 
-else
-{
-    <div class="row-infinity-col6-disconnected">
-        @foreach (var skill in _skills)
-        {
-            <SkillCard Skill="@skill"></SkillCard>
-        }
-    </div>
-}
-
+    else
+    {
+        <div class="row-infinity-col6-disconnected">
+            @foreach (var skill in _skills)
+            {
+                <SkillCard Skill="@skill"></SkillCard>
+            }
+        </div>
+    }
+</div>
 @code {
 
     private List<Skill>? _skills;
