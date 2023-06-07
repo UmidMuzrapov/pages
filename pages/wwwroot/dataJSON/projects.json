@@ -12,7 +12,7 @@
 
   {
     "id": 4,
-    "image": "/dataPhotos/projects/patientQueue.jpeg",
+    "image": "dataPhotos/projects/patientQueue.jpeg",
     "name": "Patient Queue",
     "description": "The program simulates a patient queue using a self-created priority queue and heap sorting.",
     "liveTest": false,
