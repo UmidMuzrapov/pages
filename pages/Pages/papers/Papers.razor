@@ -39,8 +39,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var url = Http.BaseAddress + "/dataJSON/papers.json";
-        _papers= await Http.GetFromJsonAsync<List<Paper>>(url);
+        _papers= await Http.GetFromJsonAsync<List<Paper>>("/pages/dataJSON/papers.json");
     }
 
     private int Index = -1; //default value cannot be 0 -> first selectedindex is 0.

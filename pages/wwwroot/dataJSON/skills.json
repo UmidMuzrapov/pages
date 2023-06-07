@@ -1,87 +1,87 @@
 [
   {
     "name": "AWS Services",
-    "image": "dataPhotos/skills/python.png",
+    "image": "/pages/dataPhotos/skills/python.png",
     "level": "75"
   },
   {
     "name": "Python",
-    "image": "dataPhotos/skills/python.png",
+    "image": "/pages/dataPhotos/skills/python.png",
     "level": "80"
   },
   {
     "name": "Java",
-    "image": "dataPhotos/skills/java.jpg",
+    "image": "/pages/dataPhotos/skills/java.jpg",
     "level": "90"
   },
   {
     "name": "C#",
-    "image": "dataPhotos/skills/cSharp.png",
+    "image": "/pages/dataPhotos/skills/cSharp.png",
     "level": "80"
   },
   {
     "name": "JavaScript",
-    "image": "dataPhotos/skills/javascript.png",
+    "image": "/pages/dataPhotos/skills/javascript.png",
     "level": "60"
   },
   {
     "name": "HTML",
-    "image": "dataPhotos/skills/html.png",
+    "image": "/pages/dataPhotos/skills/html.png",
     "level": "90"
   },
   {
     "name": "CSS",
-    "image": "dataPhotos/skills/css.jpg",
+    "image": "/pages/dataPhotos/skills/css.jpg",
     "level": "80"
   },
   {
     "name": "SQL",
-    "image": "dataPhotos/skills/sql.jpg",
+    "image": "/pages/dataPhotos/skills/sql.jpg",
     "level": "70"
   },
   {
     "name": "Blazor",
-    "image": "dataPhotos/skills/blazor.png",
+    "image": "/pages/dataPhotos/skills/blazor.png",
     "level": "80"
   },
   {
     "name": "Terminal",
-    "image": "dataPhotos/skills/commandLine.jpeg",
+    "image": "/pages/dataPhotos/skills/commandLine.jpeg",
     "level": "75"
   },
   {
     "name": "Docker",
-    "image": "dataPhotos/skills/docker.png",
+    "image": "/pages/dataPhotos/skills/docker.png",
     "level": "70"
   },
   {
     "name": ".Net Framework",
-    "image": "dataPhotos/skills/netFramework.png",
+    "image": "/pages/dataPhotos/skills/netFramework.png",
     "level": "75"
   },
   {
     "name": "Object-Oriented Programming",
-    "image": "dataPhotos/skills/objectOrientedDesign.jpeg",
+    "image": "/pages/dataPhotos/skills/objectOrientedDesign.jpeg",
     "level": "80"
   },
   {
     "name": "Unit Testing",
-    "image": "dataPhotos/skills/other.jpeg",
+    "image": "/pages/dataPhotos/skills/other.jpeg",
     "level": "75"
   },
   {
     "name": "SQLite",
-    "image": "dataPhotos/skills/SQLite.jpg",
+    "image": "/pages/dataPhotos/skills/SQLite.jpg",
     "level": "75"
   },
   {
     "name": "Software Development Models",
-    "image": "dataPhotos/skills/other.jpeg",
+    "image": "/pages/dataPhotos/skills/other.jpeg",
     "level": "80"
   },
   {
     "name": "Requirement Analysis",
-    "image": "dataPhotos/skills/other.jpeg",
+    "image": "/pages/dataPhotos/skills/other.jpeg",
     "level": "80"
   }
 

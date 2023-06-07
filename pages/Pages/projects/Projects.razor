@@ -61,8 +61,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        string api = Http.BaseAddress + "/dataJSON/projects.json";
-        _projects = await Http.GetFromJsonAsync<List<Project>>(api);
+        _projects=await Http.GetFromJsonAsync<List<Project>>("/pages/dataJSON/projects.json");
         _currentProjects=_projects;
         CountProjects();
     }
