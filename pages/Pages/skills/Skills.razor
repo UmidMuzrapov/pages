@@ -24,6 +24,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _skills=await Http.GetFromJsonAsync<List<Skill>>("/pages/dataJSON/skills.json");
+        var url = Http.BaseAddress + "/dataJSON/skills.json";
+        _skills = await Http.GetFromJsonAsync<List<Skill>>(url);
     }
 }

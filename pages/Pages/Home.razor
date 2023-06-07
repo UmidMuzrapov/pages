@@ -81,7 +81,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _universityCourses= await Http.GetFromJsonAsync<List<Course>>("/pages/dataJSON/universityCourses.json");
+        var url = Http.BaseAddress + "/dataJSON/universityCourses.json";
+        _universityCourses= await Http.GetFromJsonAsync<List<Course>>(url);
     }
 
     private void LoadMore()
