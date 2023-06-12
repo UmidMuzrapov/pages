@@ -1,9 +1,21 @@
 [
   {
-    "name": "AWS Services",
+    "name": "AWS",
     "image": "/pages/dataPhotos/skills/python.png",
     "level": "75"
   },
+  {
+    "name": "Haskell",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
+  },
+
+  {
+    "name": "LISP",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
+  },
+
   {
     "name": "Python",
     "image": "/pages/dataPhotos/skills/python.png",
@@ -22,7 +34,7 @@
   {
     "name": "JavaScript",
     "image": "/pages/dataPhotos/skills/javascript.png",
-    "level": "60"
+    "level": "70"
   },
   {
     "name": "HTML",
