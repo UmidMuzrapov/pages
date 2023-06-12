@@ -3,7 +3,7 @@
     "id": 4,
     "image": "/pages/dataPhotos/projects/chatApp.png",
     "name": "Chat App",
-    "description": "Chat App allows the users to converse after a successful log-in. Images are resized and stored in AWS S3. The service also uses cashing and cookies.",
+    "description": "Chat App allows the users to chat after a successful log-in. Images are resized and stored in AWS S3. The service also uses cashing and cookies.",
     "liveTest": false,
     "tools": "AWS (Cloud Formation, Lambda, S3, ECS, ECR, Certificate Manager), JavaScipt, Docker, REST APIs",
     "category": "Other",
@@ -12,13 +12,13 @@
 
   {
     "id": 4,
-    "image": "/pages/dataPhotos/projects/patientQueue.jpeg",
-    "name": "Patient Queue",
-    "description": "The program simulates a patient queue using a self-created priority queue and heap sorting.",
-    "liveTest": false,
-    "tools": "Java",
-    "category": "Java",
-    "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/patientQueue/src"
+    "image": "/pages/dataPhotos/projects/weather.png",
+    "name": "Global Weather",
+    "description": "Gloabal Weather allows users to get weather conditions and analysis at any place on Earth. The app supports getting user's current location and maps.",
+    "liveTest":false,
+    "tools": "ASP.Net Core, CSS, HTML5, Radzen, JavaScript, Infrastructure as Code",
+    "category": "Other",
+    "gitLink": "https://github.com/UmidMuzrapov/weather2"
   },
 
   {
@@ -53,6 +53,7 @@
     "category": "Java",
     "gitLink": "https://github.com/UmidMuzrapov/python/tree/main/connectN"
   },
+
 
   {
     "id": 4,
