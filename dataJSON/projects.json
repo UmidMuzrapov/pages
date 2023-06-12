@@ -3,9 +3,9 @@
     "id": 4,
     "image": "/pages/dataPhotos/projects/chatApp.png",
     "name": "Chat App",
-    "description": "Chat App allows the users to upload a message with an image after a successful log-in. Images are resized and stored in AWS S3. The service also uses cashing and cookies.",
+    "description": "Chat App allows the users to converse after a successful log-in. Images are resized and stored in AWS S3. The service also uses cashing and cookies.",
     "liveTest": false,
-    "tools": "AWS (Cloud Formation, Lambda, S3, ECS, ECR, Certificate Manager), JavaScipt, Docker, REST Architecture",
+    "tools": "AWS (Cloud Formation, Lambda, S3, ECS, ECR, Certificate Manager), JavaScipt, Docker, REST APIs",
     "category": "Other",
     "gitLink": "https://github.com/UmidMuzrapov/chatApp"
   },
@@ -31,27 +31,6 @@
     "category": "Java",
     "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/garden"
   },
-  {
-    "id": 4,
-    "image": "/pages/dataPhotos/projects/boxes.jpeg",
-    "name": "Data Structures",
-    "description": "The repository contains data structures -- array, queue, list, stack, graph, etc.",
-    "liveTest": false,
-    "tools": "Java",
-    "category": "Java",
-    "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/dataStructures"
-  },
-
-  {
-    "id": 4,
-    "image": "/pages/dataPhotos/projects/connectFour.jpeg",
-    "name": "Connect Four",
-    "description": "The program allows two users to play ConnectFour game. The target values can be from 3 to 6 for win. The user can play game again if they want.",
-    "liveTest": false,
-    "tools": "Java",
-    "category": "Java",
-    "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/connectFour/src"
-  },
 
   {
     "id": 4,
@@ -76,17 +55,6 @@
   },
 
   {
-    "id": 3,
-    "image": "/pages/dataPhotos/projects/connectN.jpeg",
-    "name": "Connect N",
-    "description": "The program allows the user to play famous Connect 4. Unlike Connect 4, the user can create the board of the size up to 10*10, and the number of player can be up to 5.",
-    "liveTest": false,
-    "tools": "Python",
-    "category": "Python",
-    "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/TSP"
-  },
-
-  {
     "id": 4,
     "image": "/pages/dataPhotos/projects/rhymes.jpeg",
     "name": "Rhymes",
@@ -106,17 +74,6 @@
     "tools": "Python",
     "category": "Python",
     "gitLink": "https://github.com/UmidMuzrapov/python/tree/main/mazeSolver"
-  },
-
-  {
-    "id": 2,
-    "image": "/pages/dataPhotos/projects/railyard.jpg",
-    "name": "Rail yard",
-    "description": "The user moves train cars from track to track. Once a track contains only cars going to the same location, the train departs. The user wins if there is not car left.",
-    "liveTest": false,
-    "tools": "Python",
-    "category": "Python",
-    "gitLink": "https://github.com/UmidMuzrapov/python/tree/main/railyard/src"
   },
 
   {
