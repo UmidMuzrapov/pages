@@ -336,3 +336,86 @@ a {
 #papers a {
     color: black;
 }
+
+/*Cube loader*/
+.cube {
+    color: grey;
+    margin: auto;
+    font-size: 50px;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    animation: cube-spin 9s infinite ease-in-out alternate;
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-style: preserve-3d;
+}
+
+    .side::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: darkblue;
+        animation: cube-explode 9s infinite ease-in-out;
+        opacity: 0.3;
+    }
+
+    .side:nth-child(1) {
+        transform: rotateY(90deg);
+    }
+
+    .side:nth-child(2) {
+        transform: rotateY(180deg);
+    }
+
+    .side:nth-child(3) {
+        transform: rotateY(270deg);
+    }
+
+    .side:nth-child(4) {
+        transform: rotateY(360deg);
+    }
+
+    .side:nth-child(5) {
+        transform: rotateX(90deg);
+    }
+
+    .side:nth-child(6) {
+        transform: rotateX(270deg);
+    }
+
+@keyframes cube-spin {
+    0% {
+        transform: rotateX(15deg) rotateY(40deg);
+    }
+
+    100% {
+        transform: rotateX(45deg) rotateY(760deg);
+    }
+}
+
+@keyframes cube-explode {
+    0% {
+        transform: translateZ(1.55em);
+    }
+
+    50% {
+        transform: translateZ(3em);
+    }
+
+    100% {
+        transform: translateZ(1.55em);
+    }
+}
