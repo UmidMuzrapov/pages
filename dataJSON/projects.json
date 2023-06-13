@@ -36,7 +36,7 @@
     "id": 4,
     "image": "/pages/dataPhotos/projects/musicplayer.png",
     "name": "Music Player",
-    "description": "A simple, leight music player. The program allows users to add songs to the playlist locally and enjoy their music. The program keeps the data store of users and keeps the user's state to give premium experience.",
+    "description": "A simple, light music player. The program allows users to add songs to the playlist locally and enjoy their music. The program keeps the data store of users and the state of the playlist to give a premium experience.",
     "liveTest": false,
     "tools": "Java, JavaFX, Serialization, Multithreading",
     "category": "Java",
