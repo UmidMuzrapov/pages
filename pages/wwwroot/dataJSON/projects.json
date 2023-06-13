@@ -15,10 +15,32 @@
     "image": "/pages/dataPhotos/projects/weather.png",
     "name": "Global Weather",
     "description": "Gloabal Weather allows users to get weather conditions and analysis at any place on Earth. The app supports getting user's current location and maps.",
-    "liveTest":false,
+    "liveTest": false,
     "tools": "ASP.Net Core, CSS, HTML5, Radzen, JavaScript, Infrastructure as Code",
     "category": "Other",
     "gitLink": "https://github.com/UmidMuzrapov/weather2"
+  },
+
+  {
+    "id": 4,
+    "image": "/pages/dataPhotos/projects/wordle.png",
+    "name": "Wordle",
+    "description": "The is Worlde, an interactive game with beautiful UI. The game keeps track of each user, maintains the user's state, and shows game statistics.",
+    "liveTest": false,
+    "tools": "Java, JavaFX, Serialization, Parallel Programming",
+    "category": "Java",
+    "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/wordle"
+  },
+
+  {
+    "id": 4,
+    "image": "/pages/dataPhotos/projects/musicplayer.png",
+    "name": "Music Player",
+    "description": "A simple, leight music player. The program allows users to add songs to the playlist locally and enjoy their music. The program keeps the data store of users and keeps the user's state to give premium experience.",
+    "liveTest": false,
+    "tools": "Java, JavaFX, Serialization, Multithreading",
+    "category": "Java",
+    "gitLink": "https://github.com/UmidMuzrapov/java/tree/main/musicPlayer/jukebox-umid-bernardo"
   },
 
   {
