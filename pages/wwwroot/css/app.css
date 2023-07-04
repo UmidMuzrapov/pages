@@ -120,6 +120,11 @@ a {
 .button-margin-bottom{
     margin-bottom:10px;
 }
+/*Shared*/
+.btn {
+    border-radius: 5px;
+    box-shadow: var(--rz-shadow-1);
+}
 
 /*Loader*/
 .loader {
