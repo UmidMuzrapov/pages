@@ -63,7 +63,7 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
-.header {
+.custom-header {
     text-align: center;
     color: black;
     padding-top: 10px;
