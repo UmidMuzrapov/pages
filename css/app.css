@@ -255,7 +255,7 @@ a {
     max-width: 1000px;
 }
 
-#project-frame .frame{
+#project-frame .frame {
     border-radius: 10px;
     margin: 5px;
     font-size: 16px;
@@ -266,6 +266,7 @@ a {
     overflow: auto;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
+    box-shadow: var(--rz-shadow-1);
 }
 
     #project-frame .frame::-webkit-scrollbar {
@@ -310,6 +311,9 @@ a {
 
 .circle-image {
 
+}
+#skill-card .progress {
+    box-shadow: var(--rz-shadow-1);
 }
 
 #skill-card .frame {
