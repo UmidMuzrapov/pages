@@ -122,7 +122,7 @@ a {
 }
 /*Shared*/
 .btn {
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: var(--rz-shadow-1);
 }
 
