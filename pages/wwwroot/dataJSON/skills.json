@@ -2,20 +2,8 @@
   {
     "name": "AWS",
     "image": "/pages/dataPhotos/skills/python.png",
-    "level": "75"
+    "level": "85"
   },
-  {
-    "name": "Haskell",
-    "image": "/pages/dataPhotos/skills/python.png",
-    "level": "75"
-  },
-
-  {
-    "name": "LISP",
-    "image": "/pages/dataPhotos/skills/python.png",
-    "level": "75"
-  },
-
   {
     "name": "Python",
     "image": "/pages/dataPhotos/skills/python.png",
@@ -29,7 +17,7 @@
   {
     "name": "C#",
     "image": "/pages/dataPhotos/skills/cSharp.png",
-    "level": "80"
+    "level": "90"
   },
   {
     "name": "JavaScript",
@@ -47,6 +35,17 @@
     "level": "80"
   },
   {
+    "name": "Haskell",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
+  },
+
+  {
+    "name": "LISP",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
+  },
+  {
     "name": "SQL",
     "image": "/pages/dataPhotos/skills/sql.jpg",
     "level": "70"
@@ -54,7 +53,7 @@
   {
     "name": "Blazor",
     "image": "/pages/dataPhotos/skills/blazor.png",
-    "level": "80"
+    "level": "90"
   },
   {
     "name": "Terminal",
@@ -64,7 +63,7 @@
   {
     "name": "Docker",
     "image": "/pages/dataPhotos/skills/docker.png",
-    "level": "70"
+    "level": "75"
   },
   {
     "name": ".Net Framework",
@@ -74,12 +73,12 @@
   {
     "name": "Object-Oriented Programming",
     "image": "/pages/dataPhotos/skills/objectOrientedDesign.jpeg",
-    "level": "80"
+    "level": "90"
   },
   {
     "name": "Unit Testing",
     "image": "/pages/dataPhotos/skills/other.jpeg",
-    "level": "75"
+    "level": "85"
   },
   {
     "name": "SQLite",
@@ -95,6 +94,17 @@
     "name": "Requirement Analysis",
     "image": "/pages/dataPhotos/skills/other.jpeg",
     "level": "80"
+  },
+  {
+    "name": "Software Architectural Styles",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
+  },
+
+  {
+    "name": "Desing Patterns",
+    "image": "/pages/dataPhotos/skills/python.png",
+    "level": "75"
   }
 
 ]
