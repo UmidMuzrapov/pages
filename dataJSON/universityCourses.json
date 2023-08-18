@@ -6,6 +6,30 @@
   },
 
   {
+    "name": "CSC 460, Database Design",
+    "grade": "Pending",
+    "description": "Functions of a database system. Data modeling and logical database design. Query languages and query optimization. Efficient data storage and access. Database access through standalone and web applications."
+  },
+
+  {
+    "name": "CSC 323, Formal Mathematical Reasoning and Writing",
+    "grade": "Pending",
+    "description": "Elementary real analysis as an introduction to abstract mathematics and the use of mathematical language. Elementary logic and quantifiers; manipulations with sets, relations and functions, including images and pre-images; properties of the real numbers; supreme and infimum; other topics selected from cardinality, the topology of the real line, sequence and limits of sequences and functions; the emphasis throughout is on proving theorems."
+  },
+
+  {
+    "name": "CSC 352, Systems Programming and Unix",
+    "grade": "Pending",
+    "description": "This course is an in-depth introduction to C programming and Unix. C programming topics (comprising roughly 2/3 of the course) include pointers; arrays; structures and unions; dynamic memory allocation and dynamic data structures such as lists and trees; conditional compilation; and bit manipulation. Unix topics (comprising roughly 1/3 of the course) include debuggers; makefiles; shell programming; profiling and performance tuning; and other topics that support C programming."
+  },
+
+  {
+    "name": "CSC 345, Analysis of Discrete Structures",
+    "grade": "Pending",
+    "description": "Introduction to and analysis of algorithms and characteristics of discrete structures. Course topics include algorithm analysis techniques, recurrence relations, structural induction, hierarchical structures, graphs, hashing, and sorting."
+  },
+
+  {
     "name": "CSC 252, Computer Organization",
     "grade": "Pending",
     "description": "Basic machine organization; elementary hardware concepts; CPU internals.  Machine operations and instructions; assembly language concepts and programming."
