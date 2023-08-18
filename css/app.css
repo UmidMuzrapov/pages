@@ -122,7 +122,7 @@ a {
 }
 /*Shared*/
 .btn {
-    box-shadow: var(--rz-shadow-3);
+   /* box-shadow: var(--rz-shadow-3);*/
 }
 
 /*Loader*/
@@ -279,7 +279,7 @@ a {
     overflow: auto;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
-    box-shadow: var(--rz-shadow-1);
+    /*box-shadow: var(--rz-shadow-1);*/
 }
 
     #project-frame .frame::-webkit-scrollbar {
@@ -326,7 +326,7 @@ a {
 
 }
 #skill-card .progress {
-    box-shadow: var(--rz-shadow-1);
+ /*   box-shadow: var(--rz-shadow-1);*/
 }
 
 #skill-card .frame {
