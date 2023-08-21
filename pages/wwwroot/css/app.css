@@ -125,6 +125,10 @@ a {
    /* box-shadow: var(--rz-shadow-3);*/
 }
 
+.button-padding {
+    margin: 5px 5px;
+}
+
 /*Loader*/
 .loader {
     border: 16px solid #f3f3f3;
