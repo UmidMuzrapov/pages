@@ -15,7 +15,8 @@
     "image": "/pages/dataPhotos/projects/weather.png",
     "name": "Global Weather",
     "description": "Gloabal Weather allows users to get weather conditions and analysis at any place on Earth. The app supports getting user's current location and maps.",
-    "liveTest": false,
+    "liveTest": true,
+    "liveTestLink": "https://umidmuzrapov.github.io/weather2",
     "tools": "ASP.Net Core, CSS, HTML5, Radzen, JavaScript, Infrastructure as Code",
     "category": "Other",
     "gitLink": "https://github.com/UmidMuzrapov/weather2"
