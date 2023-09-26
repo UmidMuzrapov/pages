@@ -38,4 +38,8 @@ jobs:
         FOLDER: release/wwwroot
 ```
 
+## Configuration 
+No configuration is needed. If you wish to create the portfolio from this app, you may need to change the personal information in pages.
 
+## To Do
+ - Include the design doc
