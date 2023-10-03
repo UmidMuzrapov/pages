@@ -1,6 +1,17 @@
 [
   {
     "id": 4,
+    "image": "/pages/dataPhotos/projects/multitenancy.png",
+    "name": "Multi-Tenancy for IoT Core Wireless",
+    "description": "Multi-Tenancy for AWS IoT Wireless is a distributed, multi-tenant software that demonstrates to AWS IoT Wireless customers how to logically isolate data plane and LoRaWAN resources. The system consists of the client app, microservices, Amazon Cognito, and IoT Core Wireless, showing how to achieve multi-tenancy for wireless devices, gateways, and destinations under a single AWS account.",
+    "liveTest": true,
+    "liveTestLink": "http://iotsailboatmultitenancydemo1-dev.eba-m77uvmmp.us-east-1.elasticbeanstalk.com",
+    "tools": "AWS (Cloud Formation, Lambda, ECS, ECR, Cognito, IAM, IoT, API Gateway), JavaScipt, C#, Docker, REST APIs",
+    "category": "Other",
+    "gitLink": "https://github.com/UmidMuzrapov/chatApp"
+  },
+  {
+    "id": 4,
     "image": "/pages/dataPhotos/projects/chatApp.png",
     "name": "Chat App",
     "description": "Chat App allows the users to chat after a successful log-in. Images are resized and stored in AWS S3. The service also uses cashing and cookies.",
